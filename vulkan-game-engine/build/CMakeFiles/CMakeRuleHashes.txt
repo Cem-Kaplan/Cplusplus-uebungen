@@ -1,0 +1,3 @@
+# Hashes of file build rules.
+af0bcf71b5231ec3b9e4471a1632ff3d shaders/cube.frag.spv
+8f09b02daa1115edbfab916d56f9900d shaders/cube.vert.spv

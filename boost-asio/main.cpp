@@ -1,15 +1,17 @@
 #include <boost/asio.hpp>
 #include <iostream>
 
-using namespace boost;
+using boost::asio::ip::tcp;
 
 int main() {
-    asio::io_context io;
+    boost::asio::io_context io;
 
-    asio::steady_timer timer(io, std::chrono::seconds(1));
-    timer.async_wait([](const std::error_code&) {
-        std::cout << "Timer done";
-    });
-    io.run();
+    tcp::resolver resolver(io);
+    tcp::socket socket(io);
 
+    auto endpoints = resolver.resolve("example.com", "80");
+
+    boost::asio::connect(socket, endpoints);
+
+    std::cout << "Verbunden\n";
 }
