@@ -41,9 +41,6 @@ bool checkCalculatable(std::string x) {
             std::cout << "Ein Stern gefunden\n";
         }else if (x.at(i) == '/') {
             std::cout << "Ein Slash gefunden\n";
-        } else {
-            canCalculate = false;
-            std::cerr << "Kein Rechenoperator";
         }
     }
     return canCalculate;

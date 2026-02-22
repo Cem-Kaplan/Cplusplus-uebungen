@@ -1,0 +1,19 @@
+{
+    "configurations": [
+        {
+            "name": "Linux",
+            "compilerPath": "/usr/bin/gcc-13",
+            "intelliSenseMode": "linux-gcc-x64",
+            "cppStandard": "c++20",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "/usr/include",
+                "/usr/include/GLFW",
+                "/home/cm/boost_1_90_0/boost/",
+                "/home/cm/boost_1_90_0",
+                "/home/cm/raygpu/include/"
+            ]
+        }
+    ],
+    "version": 4
+}
